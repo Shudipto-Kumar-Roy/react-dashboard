@@ -1,12 +1,33 @@
-.MuiTableRow-root > * {
-  font-size: 1.5rem !important;
-  padding: 1rem;
+.table_container {
+  overflow-x: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem 0 var(--my-white);
 }
-.MuiTableRow-root.MuiTableRow-head > * {
-  font-weight: bold !important;
+.table_container table {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border-collapse: collapse;
+  background-color: var(--my-white);
 }
-
-/* Responsive */
+.table_container table thead tr th {
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+  column-gap: 0;
+  box-shadow: 0 1rem 2rem 0 var(--my-pinkish);
+  background-color: var(--my-pinkish);
+  color: var(--my-light-dark);
+  text-align: left;
+}
+.table_container table tbody tr td {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-align: left;
+  padding: 1rem 1.5rem;
+  color: var(--my-light-dark);
+}
+/* Responsive
 @media only screen and (max-width: 1200px) {
   .MuiPaper-root {
     width: 170% !important;
@@ -14,7 +35,7 @@
 }
 
 /* Responsive */
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
   .MuiPaper-root {
     position: relative;
     width: 100% !important;
@@ -22,4 +43,4 @@
     flex-direction: column;
     align-items: center;
   }
-}
+} */

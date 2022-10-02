@@ -15,35 +15,25 @@ const CustomerReview = () => {
         type: "area",
         height: "auto",
       },
-
-      dropShadow: {
-        enabled: false,
-        enabledOnSeries: undefined,
-        top: 0,
-        left: 0,
-        blur: 3,
-        color: "#000",
-        opacity: 0.35,
+      grid: {
+        show: true,
       },
-
       fill: {
         colors: ["#fff"],
-        type: "gradient",
+        type: "solid",
       },
       dataLabels: {
         enabled: false,
       },
       stroke: {
-        curve: "smooth",
-        colors: ["white"],
+        curve: "straight",
+        width: 1.5,
+        colors: ["#f5704a"],
       },
       tooltip: {
         x: {
           format: "dd/MM/yy HH:mm",
         },
-      },
-      grid: {
-        show: true,
       },
       xaxis: {
         type: "datetime",

@@ -10,7 +10,7 @@
   display: flex;
   flex: 1;
   height: 12rem !important;
-  border: 0.02rem solid var(--my-white);
+  /* border: 0.02rem solid var(--my-white); */
   border-radius: 1rem;
   cursor: pointer;
   position: relative;
