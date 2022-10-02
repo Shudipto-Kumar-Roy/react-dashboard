@@ -1,0 +1,29 @@
+.main_dash {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.main_dash h1 {
+  font-size: 2rem;
+  color: var(--my-white);
+}
+.main_dash h2 {
+  font-size: 1.6rem;
+  color: var(--my-white);
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+  .main_dash {
+    display: flex;
+    margin-top: 4rem;
+    justify-content: flex-start;
+    gap: 4rem;
+  }
+}
+/* Responsive */
+@media only screen and (max-width: 768px) {
+  .main_dash {
+    align-items: center;
+  }
+}

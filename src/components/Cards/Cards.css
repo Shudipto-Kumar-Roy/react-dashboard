@@ -1,0 +1,121 @@
+.cards {
+  display: flex;
+  gap: 1rem;
+}
+.card {
+  width: 100%;
+}
+/* Compact Card */
+.compact_card {
+  display: flex;
+  flex: 1;
+  height: 12rem !important;
+  border: 0.02rem solid var(--my-white);
+  border-radius: 1rem;
+  cursor: pointer;
+  position: relative;
+  color: var(--my-white);
+  padding: 2rem;
+}
+.compact_card:hover {
+  box-shadow: none !important;
+}
+.circular_progress_bar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.compact_card .title {
+  font-size: 1.8rem;
+}
+.CircularProgressbar {
+  width: 6rem !important;
+  overflow: visible;
+}
+.CircularProgressbar-path {
+  stroke: white !important;
+  stroke-width: 2rem !important;
+  /* filter: drop-shadow(0.4rem 0.6rem 0.8rem white); */
+  filter: drop-shadow(-5px 6px 24px #ffffff);
+}
+.CircularProgressbar-trail {
+  display: none;
+}
+.CircularProgressbar-text {
+  fill: #ffffff !important;
+}
+.details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.details > div:nth-child(1) {
+  font-size: 4rem;
+}
+.details > span:nth-child(2) {
+  font-size: 2rem;
+}
+.details > span:nth-child(3) {
+  font-size: 1.2rem;
+}
+/* Expanded Card */
+.expanded_card {
+  position: absolute;
+  width: 70%;
+  height: 85vh;
+  z-index: 10;
+  top: 5rem;
+  left: 16rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.expanded_close {
+  align-self: flex-end;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 3rem;
+}
+.expanded_card > span:nth-child(2) {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: 0 0 1.5rem;
+}
+.expanded_card > span:nth-child(4) {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.6rem;
+}
+.chartContainer {
+  width: 75%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .cards {
+    width: 90%;
+  }
+  .expanded_card {
+    height: 60vh;
+    width: 90%;
+    z-index: 10;
+    top: 5rem;
+    left: 2rem;
+  }
+}
