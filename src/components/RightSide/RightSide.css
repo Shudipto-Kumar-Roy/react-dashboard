@@ -21,4 +21,13 @@
     margin-top: 4rem;
     gap: 2rem;
   }
+  .right_side .customer_updates {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 552px) {
+  .right_side .customer_updates > h3 {
+    text-align: center;
+  }
 }

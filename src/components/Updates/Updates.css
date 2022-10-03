@@ -51,3 +51,10 @@
   color: var(--my-white);
   font-weight: 300;
 }
+
+/* Responsive */
+@media only screen and (max-width: 1200px) {
+  .updates {
+    width: 100%;
+  }
+}

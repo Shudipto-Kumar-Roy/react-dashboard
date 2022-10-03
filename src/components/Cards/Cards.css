@@ -112,10 +112,13 @@
     width: 90%;
   }
   .expanded_card {
-    height: 60vh;
+    height: 70vh;
     width: 90%;
     z-index: 10;
-    top: 5rem;
+    top: 9rem;
     left: 2rem;
+  }
+  .chartContainer {
+    width: 70%;
   }
 }

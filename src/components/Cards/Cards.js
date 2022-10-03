@@ -9,7 +9,7 @@ const Cards = () => {
       <div className="cards">
         {CardsData &&
           CardsData.map((card, index) => (
-            <div className="card">
+            <div className="card" key={index}>
               <Card
                 title={card.title}
                 color={card.color}
